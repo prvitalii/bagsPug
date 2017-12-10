@@ -1,0 +1,42 @@
+body{
+	margin: 50px 0px;
+	background-image: url("background.jpg");
+
+}
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 650px;
+	margin: 0px auto;
+
+}
+.item{
+	background-color: lightgrey;
+	margin: 0px 5px 20px 5px;
+	border-radius: 10px;
+}
+.centered{
+	text-align: center;
+}
+.prise{
+	font-family: "Times New Roman", Georgia, Serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: black;
+	margin: 10px 0px 5px 0px;
+}
+p{
+	font-size: 14px;
+	margin:0px;
+}
+img{
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	height: 150px;
+	width: 150px;
+}
+
+a{
+	text-decoration: none;
+}

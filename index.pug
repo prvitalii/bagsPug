@@ -1,0 +1,10 @@
+doctype html
+html
+	include includes/head.pug
+	include includes/mixin-col.pug
+
+body
+	.container
+		-var n = 0
+		while n < bagCol.length
+			+item(bagCol[n++])
