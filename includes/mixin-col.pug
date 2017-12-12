@@ -1,74 +1,14 @@
 mixin item(item)
+	-var name= item.name
+	-var prise= "<span>" + item.prise.value + ", " + item.prise.curency
 	if typeof item == "object"
-		a.item(href="#")
-			img(src= item.src alt="backpack " + item.name)
-			p.centered 
-				| Backpack 
-			if item.name
-				p.centered= '"' + item.name + '"'
-			else
-				p.centered noname
-			p.centered.prise= item.prise.value + " " + item.prise.curency
+		a.item.centered(href="#")
+			img(src=item.src alt="backpack " + item.name) 
+			br 
+			|Backpack
+			br 
+			|#{name}
+			br
+			|!{prise}
 	else
 		h1 Type err
-- 
-	var bagCol = 
-		[
-			{
-				name: "Donuts", 
-				src: "http://scene7.zumiez.com/is/image/zumiez/pdp_hero/Odd-Future-Donut-Turqoise-Backpack-_266216-front.jpg",
-				prise: {
-					value: "245.5", 
-					curency: "UAH",
-				}
-			},
-			{
-				name: "Ready for school", 
-				src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxxBFO2fcPt1WcAe8oTEc9-GZhc8w1bTy2aPkdIh2LIa2zn6G-",
-				prise: {
-					value: "245.5", 
-					curency: "USD",
-				}
-			},
-			{
-				name: "Tools Organizer", 
-				src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2q0Ofp0Lu7NOxPXUWHVKSMAHhmKmy6yGCvWqEV_dr24yuxouuQA",
-				prise: {
-					value: "245.5", 
-					curency: "CAD",
-				}
-			},
-			{
-				name: "Go Jugging", 
-				src: "https://images.thenorthface.com/is/image/TheNorthFace/CHJ4_WAV_hero?$PDP-SCHEMA$",
-				prise: {
-					value: "245.5", 
-					curency: "EUR",
-				}
-			},
-			{
-				name: "Happy Hipster)", 
-				src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_wOVHOl0i8k2xf6FGIeVeuGBlePxC8Qtopg2Ltpx5qySsUAVj",
-				prise: {
-					value: "245.5", 
-					curency: "PZL",
-				}
-			},
-			{
-				name: "Tru Hiker", 
-				src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1-Xq2khXZ-8Mn5BjzyIfQbzMbBZTbkackgC0gsfqUWEDI9BsIrQ",
-				prise: {
-					value: "245.5", 
-					curency: "RUR",
-				}
-			},
-			{
-				name: "Batman", 
-				src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHi5ktc6OGtyqia0xsKAkcVsj9IUKiPz2FH5gIMuZFYts0K5pTMA",
-				prise: {
-					value: "245.5", 
-					curency: "GBF",
-				}
-			},
-			
-		]

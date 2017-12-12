@@ -19,16 +19,11 @@ body{
 .centered{
 	text-align: center;
 }
-.prise{
+span{
 	font-family: "Times New Roman", Georgia, Serif;
 	font-size: 14px;
 	font-weight: bold;
 	color: black;
-	margin: 10px 0px 5px 0px;
-}
-p{
-	font-size: 14px;
-	margin:0px;
 }
 img{
 	border-top-right-radius: 10px;

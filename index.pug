@@ -2,9 +2,9 @@ doctype html
 html
 	include includes/head.pug
 	include includes/mixin-col.pug
+	include includes/data.pug
 
 body
 	.container
-		-var n = 0
-		while n < bagCol.length
-			+item(bagCol[n++])
+		each bag in bagCol
+			+item(bag)
