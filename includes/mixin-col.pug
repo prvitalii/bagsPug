@@ -1,5 +1,5 @@
 mixin item(item)
-	-var name= item.name
+	-var name= '"' + item.name + '"'
 	-var prise= "<span>" + item.prise.value + ", " + item.prise.curency
 	if typeof item == "object"
 		a.item.centered(href="#")
